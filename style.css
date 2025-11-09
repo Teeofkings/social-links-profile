@@ -1,0 +1,142 @@
+:root {
+    /* Colors */
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --Grey-300: hsl(0, 0%, 40%);
+    --Grey-200: hsl(0, 0%, 50%);
+
+    /* Spacing */
+    --space-xs: .125rem;
+    --space-base: 1rem;
+    --space-md: clamp(1.5rem, 6.5vw, 2.5rem);
+    --space-lg: 2.5rem;
+
+    /* Font Sizes */
+    --fs-h1: 1.5rem;
+    --fs-p: .875rem;
+
+    /* Radius */
+    --br-01: .75rem;
+    
+}
+
+.attribution { 
+    font-size: .75rem; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1.7rem;
+    color: var(--Grey-300);
+    font-weight: 300;
+    gap: .5rem;
+
+}
+
+.attribution a { 
+    color: var(--Green); 
+}
+
+.attribution p {
+    margin: 0;
+}
+
+body {
+    font-family: inter, sans-serif;
+    background-color: var(--Grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+main {
+    background-color: var(--Grey-800);
+    padding: var(--space-md);
+    border-radius: var(--br-01);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: clamp(20.4375rem, 87.2vw, 24rem);
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0.25rem;
+}
+
+img {
+    border-radius: 100%;
+    width: 5.5625rem;
+}
+
+h1 {
+    color: var(--White);
+    font-size: var(--fs-h1);
+    font-weight: 600;
+    margin: 0;
+    line-height: 150%;
+}
+
+.Info {
+    gap: .125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Info p {
+    color: var(--Green);
+    margin: 0;
+    font-weight:400;
+    line-height: 150%;
+}
+
+main p {
+    color: var(--Grey-200);
+    font-weight: 300;
+    font-size: var(--fs-p);
+    margin: 0;
+    line-height: 150%;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: var(--fs-p);
+    display: flex;
+    flex-direction: column;
+    padding-block: .75rem;
+    background-color: var(--Grey-700);
+    border-radius: .5rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+li a:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
+@media (min-width: 30rem) {
+    .attribution {
+        display: flex;
+        flex-direction: row;
+        gap: 1.4rem;
+        bottom: 2rem
+    }
+}
