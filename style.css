@@ -56,7 +56,7 @@ body {
 
 main {
     background-color: var(--Grey-800);
-    padding: var(--space-md);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
     border-radius: var(--br-01);
     display: flex;
     flex-direction: column;
